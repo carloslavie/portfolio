@@ -21,16 +21,20 @@ SwiperCore.use([Pagination,Navigation]);
 
 
 
-const Slider = () => {
+const Slider = ({proyectos}) => {
     return (
         <>
         <p className="font-sans text-4xl text-white mt-16 mb-10">Proyectos</p>
         <div className="sliderImages mx-auto mb-20">
             <div className="esconderSwiper">
-                <Slides/>
+                <Slides
+                    proyectos = {proyectos}
+                />
             </div>
             <div className="esconderRespSwiper">
-                <SlidesResponsive/>
+                <SlidesResponsive
+                    proyectos = {proyectos}
+                />
             </div>
         </div>
         </>
