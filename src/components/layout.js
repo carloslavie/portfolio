@@ -1,7 +1,7 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import { Global, css } from '@emotion/react';
 import Header from './header';
+import Sidebar from './sidebar';
 
 const Layout = ({children}) => {
     return ( 
@@ -49,7 +49,7 @@ const Layout = ({children}) => {
                 `}
             />
           
-            <Header/>
+            
             {children}
         </>
      );

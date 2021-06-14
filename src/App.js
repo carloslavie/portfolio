@@ -9,13 +9,10 @@ import inicio from './pages/inicio';
 function App() {
   return (
     <Router>
-        <Header />
-        <Hero />
-        <div className="2x1:container mx-20">
+        <Header />        
             <Switch>
               <Route exact path="/" component={inicio} />
             </Switch>
-        </div>
     </Router>
     
   );

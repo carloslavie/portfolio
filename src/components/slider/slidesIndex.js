@@ -1,13 +1,7 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from 'react';
+
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/swiper.min.css";
-import "swiper/components/pagination/pagination.min.css"
-import "swiper/components/navigation/navigation.min.css"
-
-import "../App.css";
+import "../../App.css";
 
 
 // import Swiper core and required modules
@@ -18,25 +12,9 @@ import SwiperCore, {
 // install Swiper modules
 SwiperCore.use([Pagination,Navigation]);
 
-
-
-const Slider = () => {
-    return (
+const SlidesIndex = () => {
+    return ( 
         <>
-        <p className="font-sans text-4xl text-white mt-16 mb-10">Proyectos</p>
-        <div className="sliderImages mx-auto mb-20">
-        <Swiper 
-            slidesPerView={6} 
-            spaceBetween={10} 
-            slidesPerGroup={3} 
-            loop={true} 
-            loopFillGroupWithBlank={false} 
-            // pagination={{
-            //     "clickable": true
-            // }} 
-            navigation={true} 
-            className="mySwiper">
-
         <SwiperSlide>
             <div className="swiper-size">
                 <a href="https://reverent-lumiere-fe3899.netlify.app/"> <img src='/images/slider/vet.png' alt="imagenslide"/> </a>
@@ -117,13 +95,8 @@ const Slider = () => {
                 <a href="https://zen-feynman-be75bd.netlify.app/"> <img src='/images/slider/chall2.png' alt="imagenslide"/> </a> 
             </div>
         </SwiperSlide>
-      </Swiper>
-      </div>
         </>
-      );
+     );
 }
  
-export default Slider;
-
-
-
+export default SlidesIndex;

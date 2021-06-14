@@ -1,13 +1,15 @@
 import React from 'react';
-import Slider from '../components/slider';
+import Slider from '../components/slider/slider';
 import Lenguajes from '../components/lenguajes';
+import Hero from '../components/hero';
 
 
 
 const Inicio = () => {
     return (
-        <>   
-        <div className="h-screen">         
+        <>
+        <Hero />
+        <div className="h-screen 2x1:container sm:None sm:p-0 md:mx-20 sm:m-0">         
             <Slider />
             <Lenguajes />
         </div>
