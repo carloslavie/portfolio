@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css'
+import { MdEmail } from 'react-icons/md';
+import { FaInstagramSquare } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import '../App.css';
 
 const Contacto = () => {
     return ( 
@@ -28,14 +32,19 @@ const Contacto = () => {
                 </div>
                 <div>
                     <div>
-                        <a href="carloslavie@gmail.com" className="text-2xl text-center font-semibold">carloslavie@gmail.com</a>
+                        <a href="carloslavie@gmail.com" className="flex flex-row items-center text-2xl font-semibold mb-2"><MdEmail/> <p className="ml-2  ">carloslavie@gmail.com</p></a>
                     </div>
                     <div>
-                        <a href="https://www.instagram.com/carlos.lavie/" className="text-2xl text-center font-semibold">Instagram</a>
+                        <a href="https://www.instagram.com/carlos.lavie/" className="flex flex-row items-center text-2xl font-semibold mb-2"><FaInstagramSquare/> <p className="ml-2 ">Instagram</p></a>
                     </div>
                     <div>
-                        <a href="https://www.linkedin.com/in/carlos-mar%C3%ADa-lavi%C3%A9-lahitte" className="text-2xl text-center font-semibold">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/carlos-mar%C3%ADa-lavi%C3%A9-lahitte" className="flex flex-row items-center text-2xl font-semibold mb-2"><FaLinkedin/> <p className="ml-2 ">Linkedin</p></a>
                     </div>
+                    <div>
+                        <a href="https://github.com/carloslavie" className="flex flex-row items-center text-2xl font-semibold mb-2"><FaGithub/> <p className="ml-2 ">Github</p></a>
+                    </div>
+                    
+                    
                    
                    
                    

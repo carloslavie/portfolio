@@ -21,7 +21,7 @@ const Header = () => {
     <>
         <nav className="headerContainer" >
                 <div className="font-sans text-lg font-medium  text-white text-center py-5">        
-                    <Link to={"/"} className="hover:text-yellow-500">Inicio</Link>
+                    <Link to={"/"} className="hover:text-yellow-500 ">Inicio</Link>
                     <Link to={"proyectos"} className="ml-28 hover:text-yellow-500">Github</Link>
                     <Link to={"about"} className="ml-28 hover:text-yellow-500 ">Currículum</Link>
                     <Link to={"contacto"} className="ml-28 hover:text-yellow-500 ">Contacto</Link>
