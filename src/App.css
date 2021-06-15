@@ -41,7 +41,6 @@ body{
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -85,9 +84,31 @@ body{
   display:none;
 }
 
+.box{
+  position: relative;
+  width: 300px;
+  display: inline-block;
+  overflow: hidden;
+}
+.box img{
+  width: 100%;
+  transition: all linear 0.1s; 
+}
+.box img.hover-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.box:hover img{
+  opacity: 0;
+}
+.box:hover img.hover-img{
+  opacity: 1;
+}
 
 .containerImg:hover{
-  opacity: 10%;  
+  opacity: 50%;  
   z-index: 0;
 }
 

@@ -25,7 +25,7 @@ const Slides = () => {
     
     return ( 
         <Swiper 
-            slidesPerView={6} 
+            slidesPerView={10} 
             spaceBetween={10} 
             slidesPerGroup={3} 
             loop={true} 

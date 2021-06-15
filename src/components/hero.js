@@ -18,10 +18,14 @@ const Hero = () => {
                     <p className="font-sans text-6xl font-semibold text-black py-6"> 
                         <Link to={'/'} >Carlos<span className="font-sans text-6xl font-extrabold">Lavié</span> </Link> 
                     </p>
-                    <img src="images/yoshadow.png" className="object-contain 
+                    <div className="box">
+                        <img src="images/yoshadow.png"/>
+                        <img src="images/yo2.png" className="hover-img"/>
+                    </div>
+                    {/* <img src="images/yoshadow.png" className="object-contain 
                     md:pb-4 focus-within:sm:px-0 
                     sm:mx-auto
-                    md:h-48 sm:h-24"/>
+                    md:h-48 sm:h-24"/> */}
                 </div>
                 <div className="md:bg-black md:bg-opacity-40 md:h-60 md:w-px md:block sm:hidden">
                     

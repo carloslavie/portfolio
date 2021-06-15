@@ -1,5 +1,6 @@
 import React  from 'react';
 import '../App.css';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
 
@@ -18,21 +19,21 @@ const Sidebar = () => {
                 {/* <header className="w-full py-5 px-6 sm:hidden"> */}
                     <nav className="text-white text-base font-semibold pt-3">
                         
-                        <a href="" className="font-sans block text-white text-2xl  py-4 pl-6">
+                        <Link to="/" className="font-sans block text-white text-2xl  py-4 pl-6">
                             Inicio
-                        </a>
-                        <a href="" className="font-sans block text-white text-2xl  py-4 pl-6">
-                            Proyectos
-                        </a>
-                        <a href="" className="font-sans block text-white text-2xl  py-4 pl-6">
-                            Sobre mi
-                        </a>
-                        <a href="" className="font-sans block text-white text-2xl  py-4 pl-6">
+                        </Link>
+                        <Link to="proyectos" className="font-sans block text-white text-2xl  py-4 pl-6">
                             Github
-                        </a>
-                        <a href="" className="font-sans block text-white text-2xl  py-4 pl-6">
+                        </Link>
+                        {/* <Link to="" className="font-sans block text-white text-2xl  py-4 pl-6">
+                            Proyectos
+                        </Link> */}
+                        <Link to="about" className="font-sans block text-white text-2xl  py-4 pl-6">
+                            Currículum
+                        </Link>
+                        <Link to="contacto" className="font-sans block text-white text-2xl  py-4 pl-6">
                             Contacto
-                        </a>
+                        </Link>
                     </nav>
                 {/* </header> */}
             {/* </div> */}

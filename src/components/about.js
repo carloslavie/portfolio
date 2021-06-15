@@ -132,7 +132,7 @@ const About = () => {
 
                 <div className="border-b-2 border-black border-opacity-10  pb-3 mb-6">
                     <p className="font-sans">
-                    <span className="font-sans font-bold">Idiomas:</span> Inglés, bueno manejo oral y escrito.</p>
+                    <span className="font-sans font-bold">Idiomas:</span> Inglés, buen manejo oral y escrito.</p>
                     <p className="font-sans ">
                     <span className="font-sans font-bold">Herramientas:</span> Visual Studio Code - Mysql - Node JS - React JS - Postman - Photoshop - Premiere - Illustrator - Paquete Office</p>    
                     <p className="font-sans">

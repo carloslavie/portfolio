@@ -17,7 +17,7 @@ console.log(proyectos)
             <p className="font-bold text-white font-sans text-4xl mr-3">Ver codigo en Repositorio</p>
             <img src="images/gitlogo.png" alt="logogit" className="gitimg"/>
         </div>
-        <div className="grid grid-cols-8 gap-6 mx-auto  ">
+        <div className="grid grid-cols-8 gap-6 mx-auto">
             {proyectos.map(proyecto => (
                 <div className="my-2">
                     <a href={proyecto.giturl} alt="urlgit">
