@@ -85,6 +85,16 @@ body{
   display:none;
 }
 
+
+.containerImg:hover{
+  opacity: 10%;  
+  z-index: 0;
+}
+
+.gitimg{
+  width: 50px;
+}
+
 @media (max-width:768px){
   .headerContainer{
     display: none;

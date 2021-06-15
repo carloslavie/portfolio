@@ -42,14 +42,10 @@ const Slider = () => {
         >Proyectos</p>
         <div className="sliderImages mx-auto mb-20">
             <div className="esconderSwiper">
-                <Slides
-                    proyectos = {proyectos}
-                />
+                <Slides />
             </div>
             <div className="esconderRespSwiper">
-                <SlidesResponsive
-                    proyectos = {proyectos}
-                />
+                <SlidesResponsive />
             </div>
         </div>
         </>

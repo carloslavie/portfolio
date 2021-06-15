@@ -5,6 +5,7 @@ import Header from './components/header';
 import inicio from './pages/inicio';
 import About from './components/about';
 import Proyectos from './components/proyectos';
+import Contacto from './components/contacto';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
               <Route exact path="/" component={inicio} />
               <Route exact path="/about" component={About} />
               <Route exact path="/proyectos" component={Proyectos} />
+              <Route exact path="/contacto" component={Contacto} />
             </Switch>
     </Router>
     
