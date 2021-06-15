@@ -22,6 +22,16 @@ body{
   background: linear-gradient(to right, rgba(44, 83, 100, 0.602), rgba(32, 58, 67, 0.602), rgba(15, 32, 39, 0.602)), url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  
 }
+.heroContainerCV{
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background-repeat: repeat-y;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(44, 83, 100, 0.602), rgba(32, 58, 67, 0.602), rgba(15, 32, 39, 0.602)), url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(44, 83, 100, 0.602), rgba(32, 58, 67, 0.602), rgba(15, 32, 39, 0.602)), url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+}
 
 .swiper-container {
   width: 100%;

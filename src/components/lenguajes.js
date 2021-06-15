@@ -3,7 +3,7 @@ import React from 'react';
 const Lenguajes = () => {
     return ( 
         <>
-        <p className="font-sans text-4xl text-white mt-16 mb-10">Skills</p>
+        <p className="text-center md:text-left font-sans text-4xl text-white mt-16 mb-10">Skills</p>
         <div className="flex flex-row mb-40" >
             <div>
                 <img src="images/react.png" alt="logoReact" className="w-40"/>

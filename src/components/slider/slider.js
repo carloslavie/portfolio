@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import Slides from './slides';
@@ -21,10 +22,24 @@ SwiperCore.use([Pagination,Navigation]);
 
 
 
-const Slider = ({proyectos}) => {
+const Slider = () => {
+
+    const proyectos = useSelector(state => state.proyectos.proyectos )
+
+    useEffect(() => {
+        
+    }, [])
+
     return (
         <>
-        <p className="font-sans text-4xl text-white mt-16 mb-10">Proyectos</p>
+        <p className="
+        text-center md:text-left
+        font-sans
+        text-4xl 
+        text-white 
+        mt-16 
+        mb-10" 
+        >Proyectos</p>
         <div className="sliderImages mx-auto mb-20">
             <div className="esconderSwiper">
                 <Slides
