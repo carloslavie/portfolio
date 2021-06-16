@@ -32,22 +32,17 @@ const Contacto = () => {
                 </div>
                 <div>
                     <div>
-                        <a href="carloslavie@gmail.com" className="flex flex-row items-center text-2xl font-semibold mb-2"><MdEmail/> <p className="ml-2  ">carloslavie@gmail.com</p></a>
+                        <div className="flex flex-row items-center justify-center text-2xl font-semibold mb-2"><MdEmail/> <p className="ml-2  ">carloslavie@gmail.com</p></div>
                     </div>
                     <div>
-                        <a href="https://www.instagram.com/carlos.lavie/" className="flex flex-row items-center text-2xl font-semibold mb-2"><FaInstagramSquare/> <p className="ml-2 ">Instagram</p></a>
+                        <a href="https://www.instagram.com/carlos.lavie/" className="flex flex-row items-center justify-center text-2xl font-semibold mb-2"><FaInstagramSquare/> <p className="ml-2 ">Instagram</p></a>
                     </div>
                     <div>
-                        <a href="https://www.linkedin.com/in/carlos-mar%C3%ADa-lavi%C3%A9-lahitte" className="flex flex-row items-center text-2xl font-semibold mb-2"><FaLinkedin/> <p className="ml-2 ">Linkedin</p></a>
+                        <a href="https://www.linkedin.com/in/carlos-mar%C3%ADa-lavi%C3%A9-lahitte" className="flex flex-row items-center justify-center text-2xl font-semibold mb-2"><FaLinkedin/> <p className="ml-2 ">Linkedin</p></a>
                     </div>
                     <div>
-                        <a href="https://github.com/carloslavie" className="flex flex-row items-center text-2xl font-semibold mb-2"><FaGithub/> <p className="ml-2 ">Github</p></a>
+                        <a href="https://github.com/carloslavie" className="flex flex-row items-center justify-center text-2xl font-semibold mb-2"><FaGithub/> <p className="ml-2 ">Github</p></a>
                     </div>
-                    
-                    
-                   
-                   
-                   
                 </div>
             </div>
         </div>

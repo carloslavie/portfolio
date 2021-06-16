@@ -13,16 +13,26 @@ console.log(proyectos)
     return ( 
         <>
         <div className="h-screen xl:container sm:None sm:p-0 md:mx-auto sm:m-0">  
-        <div className="flex flex-row  mt-20 mb-10 justify-center">
-            <p className="font-bold text-white font-sans text-4xl mr-3">Ver codigo en Repositorio</p>
+        <div className="flex  flex-col-reverse md:flex-row  mt-20 mb-10 items-center justify-center">
+            <p className="font-bold text-white font-sans  text-2xl md:text-4xl mr-3">Ver codigo en Repositorio</p>
             <img src="images/gitlogo.png" alt="logogit" className="gitimg"/>
         </div>
-        <div className="grid grid-cols-8 gap-6 mx-auto">
+        <div className="
+            grid 
+            sm: grid-cols-2 md:grid-cols-8 
+            md:gap-3 
+            mx-auto">
             {proyectos.map(proyecto => (
                 <div className="my-2">
-                    <a href={proyecto.giturl} alt="urlgit">
-                        <img src={proyecto.img} alt="imagenproyecto" className="containerImg"/>  
-                    </a>                                      
+                    <div className="relative ">
+                        <div  className="text-white text-2xl ">
+                            <div className="z-30  bg-black opacity-0 hover:opacity-70 h-full flex flex-col justify-center items-center absolute inset-x-0 bottom-0 text-center">
+                                <a href={proyecto.url} alt="urlgit" className="bg-black w-full p-1 hover:bg-red-700 z-10 " >PROYECTO</a>
+                                <a href={proyecto.url} alt="urlgit" className="bg-black w-full p-1 hover:bg-red-700 z-10" >CÓDIGO</a>
+                            </div>
+                            <img src={proyecto.img} alt="imagenproyecto" className="relative z-0"/>  
+                        </div> 
+                    </div>                                     
                 </div>
                 ))}
         </div>
@@ -32,3 +42,4 @@ console.log(proyectos)
 }
  
 export default Proyectos;
+

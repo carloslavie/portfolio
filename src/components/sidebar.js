@@ -2,7 +2,7 @@ import React  from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = ({traerOpen}) => {
 
     
 
@@ -20,19 +20,19 @@ const Sidebar = () => {
                     <nav className="text-white text-base font-semibold pt-3">
                         
                         <Link to="/" className="font-sans block text-white text-2xl  py-4 pl-6">
-                            Inicio
+                            <button onClick={()=>{traerOpen(false)}}>Inicio</button>
                         </Link>
                         <Link to="proyectos" className="font-sans block text-white text-2xl  py-4 pl-6">
-                            Github
+                            <button onClick={()=>{traerOpen(false)}}>Proyectos</button>
                         </Link>
                         {/* <Link to="" className="font-sans block text-white text-2xl  py-4 pl-6">
                             Proyectos
                         </Link> */}
                         <Link to="about" className="font-sans block text-white text-2xl  py-4 pl-6">
-                            Currículum
+                            <button onClick={()=>{traerOpen(false)}}>Currículum</button>
                         </Link>
                         <Link to="contacto" className="font-sans block text-white text-2xl  py-4 pl-6">
-                            Contacto
+                            <button onClick={()=>{traerOpen(false)}}>Contacto</button>
                         </Link>
                     </nav>
                 {/* </header> */}
