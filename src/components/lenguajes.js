@@ -1,4 +1,5 @@
 import React from 'react';
+import { SiTailwindcss } from 'react-icons/si';
 
 const Lenguajes = () => {
     return ( 
@@ -22,6 +23,9 @@ const Lenguajes = () => {
             </div>
             <div className="mx-5">
                 <img src="images/gitlogo.png" alt="logogit" className="md:w-14 w-14"/>
+            </div>
+            <div className="mx-5">
+                <SiTailwindcss className="md:text-6xl text-5xl text-white"/>
             </div>
         </div>
         </>
