@@ -25,7 +25,7 @@ const SlidesResponsive = () => {
         <Swiper 
             slidesPerView={2} 
             spaceBetween={10} 
-            slidesPerGroup={3} 
+            slidesPerGroup={2} 
             loop={true} 
             loopFillGroupWithBlank={false} 
             // pagination={{
