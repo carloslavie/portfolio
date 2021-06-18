@@ -1,7 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
-import { useSelector } from "react-redux";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
 import Slides from './slides';
 import SlidesResponsive from './slidesResponsive';
 // Import Swiper styles
@@ -24,11 +21,7 @@ SwiperCore.use([Pagination,Navigation]);
 
 const Slider = () => {
 
-    const proyectos = useSelector(state => state.proyectos.proyectos )
-
-    useEffect(() => {
-        
-    }, [])
+    
 
     return (
         <>

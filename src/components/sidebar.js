@@ -10,9 +10,9 @@ const Sidebar = ({traerOpen}) => {
         <>
             <aside className="bgaside bg-opacity-90 transition delay-300 duration-300 -translate-x-full fixed left-0 top-0 z-50 h-full w-72 md:hidden sm:block shadow-xl ">
                 <div className="pt-6 text-center border-b border-t">
-                    <a href="" className="text-yellow-500 text-4xl font-bold">
+                    <p className="text-yellow-500 text-4xl font-bold">
                         Carlos Lavié
-                    </a>
+                    </p>
                     <p className="text-yellow-500 text-md font-semibold text-center mb-3">Portfolio</p>
                 </div>
                 {/* <div className="w-full flex flex-col h-screen overflow-y-hidden"> */}

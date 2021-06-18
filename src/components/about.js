@@ -17,7 +17,7 @@ const About = () => {
                     <p className="font-sans text-6xl font-semibold text-black py-6"> 
                     Carlos<span className="font-sans text-6xl font-extrabold">Lavié</span> 
                     </p>
-                    <img src="images/yoshadow.png" className="object-contain 
+                    <img src="images/yoshadow.png" alt="yosombra" className="object-contain 
                     md:pb-4 focus-within:sm:px-0 
                     sm:mx-auto
                     md:h-48 sm:h-24"/>

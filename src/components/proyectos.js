@@ -12,7 +12,7 @@ console.log(proyectos)
     
     return ( 
         <>
-        <div className="h-screen xl:container sm:None sm:p-0 md:mx-auto sm:m-0">  
+        <div className="h-screen xl:container sm:None sm:p-0 md:mx-auto sm:m-0 md:mb-40 ">  
         <div className="flex  flex-col-reverse md:flex-row  mt-20 mb-10 items-center justify-center">
             <p className="font-bold text-white font-sans  text-2xl md:text-4xl mr-3">Ver codigo en Repositorio</p>
             <img src="images/gitlogo.png" alt="logogit" className="gitimg"/>
