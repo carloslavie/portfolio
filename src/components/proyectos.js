@@ -1,17 +1,18 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import '../App.css';
 
 const Proyectos = () => {
 
     const proyectos = useSelector(state => state.proyectos.proyectos )
-console.log(proyectos)
-    useEffect(() => {
-        
-    }, [])
+
+    console.log(proyectos)
+    
     
     return ( 
         <>
+        {proyectos.length === 0 ? <p>No hay proyectos que mostrar</p> : 
+        
         <div className="h-screen xl:container sm:None sm:p-0 md:mx-auto sm:m-0 md:mb-40 ">  
         <div className="flex  flex-col-reverse md:flex-row  mt-20 mb-10 items-center justify-center">
             <p className="font-bold text-white font-sans  text-2xl md:text-4xl mr-3">Ver codigo en Repositorio</p>
@@ -23,7 +24,8 @@ console.log(proyectos)
             md:gap-3 
             mx-auto">
             {proyectos.map(proyecto => (
-                <div className="my-2">
+                <div className="my-2"
+                key={proyecto.id}>
                     <div className="relative ">
                         <div  className="text-white text-2xl ">
                             <div className="z-30  bg-black opacity-0 hover:opacity-70 h-full flex flex-col justify-center items-center absolute inset-x-0 bottom-0 text-center">
@@ -37,6 +39,8 @@ console.log(proyectos)
                 ))}
         </div>
         </div>
+        }
+        
         </>
      );
 }
