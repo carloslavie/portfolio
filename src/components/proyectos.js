@@ -28,7 +28,7 @@ console.log(proyectos)
                         <div  className="text-white text-2xl ">
                             <div className="z-30  bg-black opacity-0 hover:opacity-70 h-full flex flex-col justify-center items-center absolute inset-x-0 bottom-0 text-center">
                                 <a href={proyecto.url} alt="urlgit" className="bg-black w-full p-1 hover:bg-red-700 z-10 " >PROYECTO</a>
-                                <a href={proyecto.url} alt="urlgit" className="bg-black w-full p-1 hover:bg-red-700 z-10" >CÓDIGO</a>
+                                <a href={proyecto.giturl} alt="urlgit" className="bg-black w-full p-1 hover:bg-red-700 z-10" >CÓDIGO</a>
                             </div>
                             <img src={proyecto.img} alt="imagenproyecto" className="relative z-0"/>  
                         </div> 
