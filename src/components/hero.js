@@ -1,11 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css'
+import '../App.css';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
     return ( 
-        <div className="heroContainer md:pt-40 pt-3.5" >
-             <div className="
+        <motion.div 
+            initial={{opacity:0}}
+            animate={{opacity:1}}
+            transition={{delay:.5, duration:1}}
+            className="heroContainer md:pt-40 pt-3.5" >
+             <motion.div 
+             initial={{x:-2000}}
+             animate={{x:0}}
+             transition={{delay:1, duration:1, type:'spring', stiffness:100}}
+             className="
               bg-white bg-opacity-60 shadow-md
              md:flex sm:flex
              md:flex-row sm:flex-col
@@ -34,8 +43,8 @@ const Hero = () => {
                    <p className="text-3xl text-center font-semibold">Full Stack Developer</p>
                    <p className="font-sans text-5xl text-center font-extrabold">React JS</p>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
      );
 }
  
